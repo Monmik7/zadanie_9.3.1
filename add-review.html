@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+        form{
+            background-color: gainsboro;
+            width: 50%;
+            margin: auto;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+       
+        input, select, textarea {
+            display: block;
+            margin-bottom: 5px;
+            width: 100%;
+            box-sizing: border-box;
+
+            border-radius: 0%;
+            border-width: 1px;
+        }
+        .tlacitko{
+            background-color: rgb(119, 173, 37);
+            border-width: 0ch;
+            padding: 5px;
+        }
+        .a{
+            position:absolute; 
+            width: 150px; 
+            height: 150px; 
+            top:800px; 
+            left: 120px; 
+            border: 15px solid lime; 
+            z-index:2;
+
+        }
+        .b{
+            position:absolute; 
+            width: 150px; 
+            height: 150px; 
+            top:800px; 
+            left: 80px; 
+            border:15px solid yellow; 
+            z-index:1;
+        }
+        .c{
+            position:absolute; 
+            width: 150px; 
+            height: 150px; 
+            top:750px;
+            left: 80px; 
+            border: 15px solid red;
+        }
+        .d{
+            position:absolute;
+            width: 150px; 
+            height: 150px; 
+            top: 750px; 
+            left: 120px; 
+            border: 15px solid blue;
+
+        }
+       
+
+       
+    </style>
+</head>
+<body>
+
+    <form action="" method="get" autocomplete="on">
+        <h1>Pridajte recenziu filmu</h1><br>
+        <label for="nfilm">Názov filmu:</label><br>
+        <input type="text" required id="nfilm" name="nfilm" value=""><br>
+        <label for="nick">Prihlasovacie meno:</label><br>
+        <input type="text" id="nick" name="nick" value=""><br>
+        <label for="email">Email:</label><br>
+        <input type="email" required name="email" id="email" placeholder="Email"><br>
+        <label for="textarea">Textové pole:</label><br>
+        <textarea id="textarea" name="textarea" rows="4" cols="50"></textarea><br>
+        <label for="date">Napíšte dátum pozretia filmu:</label><br>
+        <input type="date" name="date" id="date"><br>
+        <label for="range">Ohodnote film od 0 do 100:</label><br>
+        <input type="range" name="range" id="hodnotenie" step="10" min="0" max="100" value="0"><br>
+        <label for="žaner">Vyberte žáner filmu:</label><br>
+        <select>
+            <optgroup label="Žáner">
+             <option value="1">Komédia</option>
+             <option value="2">Dráma</option>
+             <option value="3">Dobrodružný film</option>
+             <option value="4">Akčný film</option>
+             <option value="5">Scifi film</option>
+             <option value="6">Horor</option>
+             <option value="7">Detský film</option>
+            </optgroup> 
+        </select><br>
+        <br>
+        <br>
+        <input class="tlacitko" type="submit" value="Submit" onclick="alert('Ahoj webinár!');">
+
+        <!--<input class="tlacitko" type="submit" value="Submit" onclick="event.preventDefault();"> po kliknuti na button sa zobrazi Ahoj webinar!>-->
+      
+    </form> 
+    <p></p>
+    
+    <a href="index.html">Domovská stránka</a> 
+    <p></p>
+    <div class="a">  
+    </div>
+    <div class="b">
+    </div>
+    <div class="c">
+    </div>
+    <div class="d">
+    </div>
+    
+</body>
+</html>
+
+
+
+
